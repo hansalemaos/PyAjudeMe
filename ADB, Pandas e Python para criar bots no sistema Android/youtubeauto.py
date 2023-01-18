@@ -1,3 +1,4 @@
+#https://youtu.be/sRYspWNviQI
 from adbkit import ADBTools
 from locate_pixelcolor import search_colors
 import numpy as np
