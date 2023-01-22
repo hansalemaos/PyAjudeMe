@@ -1,0 +1,36 @@
+from site2hdd import download_webpage
+
+starturls=[r'''https://pydata.org/upcoming-events/''',  # if it can't find links on the starting page, pass a list of links from the site.
+r'''https://pydata.org/past-events/''',
+r'''https://pydata.org/organize-a-conference/''',
+r'''https://pydata.org/start-a-meetup/''',
+r'''https://pydata.org/volunteer/''',
+r'''https://pydata.org/code-of-conduct/''',
+r'''https://pydata.org/diversity-inclusion/''',
+r'''https://pydata.org/wp-content/uploads/2022/03/PyData-2022-Sponsorship-Prospectus-v4-1.pdf''',
+r'''https://pydata.org/sponsor-pydata/#''',
+r'''https://pydata.org/faqs/''',
+r'''https://pydata.org/''',
+r'''https://pydata.org/about/''',
+r'''https://pydata.org/sponsor-pydata/''',
+r'''https://pydata.org/wp-content/uploads/2022/03/PyData-2022-Sponsorship-Prospectus-v4.pdf''',]
+download_webpage(
+      ProxyPickleFile=r'c:\newfilepath\myproxiefile\proxy.pkl',
+      DomainName="pydata.org",
+      DomainLink="https://pydata.org/",
+      SaveFolder=r"c:\site2hdd_pandas_complete",
+      ProxyConfidenceLimit=3,
+      UrlsAtOnce=100,
+      ThreadLimit=50,
+      RequestsTimeout=10,
+      ThreadTimeout=12,
+      SleepAfterKillThread=0.1,
+      SleepAfterStartThread=0.1,
+      IgnoreExceptions=True,
+      proxy_http_check_timeout=4,
+      proxy_threads_httpcheck=65,
+      proxy_threads_ping=100,
+      proxy_silent=False,
+      proxy_max_proxies_to_check=1000,
+      starturls=starturls,
+  )
