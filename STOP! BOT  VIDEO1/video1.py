@@ -10,8 +10,8 @@
 # pip install ujson
 # pip install group-and-iter-everything
 # pip install unidecode
-# 
-# 
+# pip install flatten-any-dict-iterable-or-whatsoever
+# pip install flatten-everything
 # pip install rapidfuzz # se der 
 # pip install thefuzz # se rapidfuzz não der 
 
